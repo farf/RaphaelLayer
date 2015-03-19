@@ -31,7 +31,6 @@ task('build', ['lint'], function(compsBase32, buildName) {
 	console.log('Concatenating ' + files.length + ' files...');
 
 	var content = build.combineFiles(files);
-
 	var oldSrc = build.load(srcPath),
 		newSrc = COPYRIGHT + content,
 		srcDelta = build.getSizeDelta(newSrc, oldSrc);

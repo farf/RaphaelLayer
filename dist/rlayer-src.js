@@ -24,7 +24,8 @@ if (typeof exports != 'undefined') {
 	window.R = R;
 }
 
-R.version = '0.1.3';
+R.version = '0.1.4';
+
 
 R.Layer = L.Class.extend({
 	includes: L.Mixin.Events,
